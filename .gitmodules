@@ -1,0 +1,12 @@
+[submodule "openembedded-core"]
+	url = github.com/schleichdi2/openpli-core-5.0/openembedded-core
+[submodule "meta-openembedded"]
+	url = git://github.com/schleichdi2/openpli-core-5.0/meta-openembedded
+[submodule "bitbake"]
+	url = git://github.com/schleichdi2/openpli-core-5.0/bitbake
+[submodule "meta-openpli/recipes-openpli/e2openplugins"]
+	url = git://github.com/schleichdi2/openpli-core-5.0/meta-openpli/recipes-openpli/e2openplugins
+[submodule "meta-openpli"]
+	url = git://github.com/schleichdi2/openpli-core-5.0/meta-openpli
+[submodule "meta-openpli/recipes-openpli"]
+	url = git://github.com/schleichdi2/openpli-core-5.0/meta-openpli/recipes-openpli
