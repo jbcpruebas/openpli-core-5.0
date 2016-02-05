@@ -47,7 +47,7 @@ rootfsremoveopkgleftovers() {
 
 	cd ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/
 		rm -r ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/rc_models.cfg
-		mv ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/rc_models-neu.cfg ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/rc_models.cfg
+		mv ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/rc_models-neu.cfg ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/rc_models.cfg
 	cd
 
 	rm -r ${IMAGE_ROOTFS}/var/lib/opkg/lists
