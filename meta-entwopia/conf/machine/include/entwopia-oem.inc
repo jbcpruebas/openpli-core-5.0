@@ -94,4 +94,5 @@ BOOTLOGO_FILENAME = "splash.bin"
 
 require conf/machine/include/tune-mips32.inc
 require conf/machine/include/entwopia-wifi.inc
-
+# add support for extra feeds
+PACKAGE_ARCHS += " ${MACHINEBUILD}"
