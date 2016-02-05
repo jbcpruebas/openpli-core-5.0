@@ -16,7 +16,7 @@ inherit waf-samba
 
 PACKAGECONFIG[attr] = ",,attr"
 
-SRC_URI += "${@bb.utils.contains('PACKAGECONFIG', 'attr', '', '', d)}"
+SRC_URI += "${@bb.utils.contains('PACKAGECONFIG', 'attr', '', 'file://avoid-attr-unless-wanted.patch', d)}"
 
 S = "${WORKDIR}/talloc-${PV}"
 
