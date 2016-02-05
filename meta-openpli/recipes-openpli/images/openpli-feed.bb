@@ -9,7 +9,7 @@ SRCREV = "${AUTOREV}"
 
 SRC_URI = "file://*"
 
-FILES_${PN} = "/etc/opkg/* /usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/*"
+FILES_${PN} = "/etc/opkg/* /usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/* /usr/share/enigma2/rc_models"
 S = "${WORKDIR}"
 
 do_install() {
@@ -24,5 +24,11 @@ do_install() {
     for f in lookuptable-neu.txt
     do
         install -m 755 ${f} ${D}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/${f}
+    done
+
+    install -d ${D}/usr/share/enigma2/rc_models
+    for f in bre2ze.png bre2ze.xml red1.png red1.xml rc_models-neu.cfg
+    do
+        install -m 755 ${f} ${D}/usr/share/enigma2/rc_models/${f}
     done
 }

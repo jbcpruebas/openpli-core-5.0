@@ -44,6 +44,12 @@ rootfsremoveopkgleftovers() {
 		rm -r ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable.txt
 		mv ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable-neu.txt ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable.txt
 	cd
+
+	cd ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/
+		rm -r ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/rc_models.cfg
+		mv ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/rc_models-neu.cfg ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/rc_models.cfg
+	cd
+
 	rm -r ${IMAGE_ROOTFS}/var/lib/opkg/lists
 	if [ "${MACHINE}" = "7100s" ]; then
 		rm -r ${IMAGE_ROOTFS}/etc/opkg/bre2ze-feed.conf	
