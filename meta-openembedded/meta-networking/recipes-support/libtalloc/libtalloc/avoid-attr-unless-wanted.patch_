@@ -1,6 +1,6 @@
 --- a/lib/replace/wscript	2015-11-13 16:04:04.000000000 +0100
 +++ b/lib/replace/wscript	2015-11-13 16:23:20.000000000 +0100
-@@ -683,8 +683,6 @@
+@@ -636,8 +636,6 @@
      if not bld.CONFIG_SET('HAVE_INET_ATON'):     REPLACE_SOURCE += ' inet_aton.c'
      if not bld.CONFIG_SET('HAVE_INET_NTOP'):     REPLACE_SOURCE += ' inet_ntop.c'
      if not bld.CONFIG_SET('HAVE_INET_PTON'):     REPLACE_SOURCE += ' inet_pton.c'
@@ -9,7 +9,7 @@
  
      bld.SAMBA_LIBRARY('replace',
                        source=REPLACE_SOURCE,
-@@ -695,7 +693,7 @@
+@@ -648,7 +646,7 @@
                        # at the moment:
                        # hide_symbols=bld.BUILTIN_LIBRARY('replace'),
                        private_library=True,
