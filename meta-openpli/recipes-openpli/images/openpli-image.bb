@@ -5,6 +5,7 @@ inherit image
 IMAGE_INSTALL = " \
 	${ROOTFS_PKGMANAGE} \
 	3rd-party-feed-configs \
+	openpli-feed \
 	avahi-daemon \
 	dropbear \
 	e2fsprogs-e2fsck \
