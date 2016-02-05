@@ -55,7 +55,7 @@ DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
 TARGET_ARCH = "mipsel"
 DEFAULTTUNE = "mips32el"
-GCCVERSION = "4.9%"
+
 GLIBC_EXTRA_OECONF = "--with-tls --with-__thread"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-entwopia"
