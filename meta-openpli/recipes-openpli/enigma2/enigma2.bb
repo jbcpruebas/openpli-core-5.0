@@ -142,7 +142,6 @@ RDEPENDS_enigma2-plugin-systemplugins-wirelesslan = "wpa-supplicant wireless-too
 DESCRIPTION_append_enigma2-plugin-systemplugins-networkwizard = "provides easy step by step network configuration"
 # Note that these tools lack recipes
 RDEPENDS_enigma2-plugin-extensions-dvdburn = "dvd+rw-tools dvdauthor mjpegtools cdrkit python-imaging ${DEMUXTOOL}"
-RDEPENDS_enigma2-plugin-systemplugins-hotplug = "hotplug-e2-helper"
 
 inherit gitpkgv pythonnative
 
