@@ -33,13 +33,13 @@ do_install() {
     done
 
     install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/OpenWebif/public/images/boxes
-    for f in twinboxlcd.jpg ultimo.jpg
+    for f in twinboxlcd-neu.jpg ultimo-neu.jpg
     do
         install -m 755 ${f} ${D}/usr/lib/enigma2/python/Plugins/Extensions/OpenWebif/public/images/boxes/${f}
     done
 
     install -d ${D}/usr/lib/enigma2/python/Plugins/Extensions/OpenWebif/public/images/remotes
-    for f in twinbox.png vu_ultimo.png
+    for f in twinbox-neu.png vu_ultimo-neu.png
     do
         install -m 755 ${f} ${D}/usr/lib/enigma2/python/Plugins/Extensions/OpenWebif/public/images/remotes/${f}
     done
