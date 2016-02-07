@@ -388,7 +388,7 @@ def getAllInfo():
 		remote = "xcombo"
 	elif procmodel == "ew7362":
 		remote = "ew7362"
-	elif procmodel == "7162":
+	elif procmodel == "7100s":
 		remote = "7100s"
 
 
