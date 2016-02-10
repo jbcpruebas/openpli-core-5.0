@@ -17,6 +17,7 @@ KERNEL_WIFI_DRIVERS = " \
 	kernel-module-rt73usb \
 	kernel-module-rtl8187 \
 	kernel-module-zd1211rw \
+	kernel-module-rt5370 \
 	"
 
 EXTRA_KERNEL_WIFI_DRIVERS = " \
