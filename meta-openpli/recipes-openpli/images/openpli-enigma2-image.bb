@@ -5,6 +5,7 @@ KERNEL_WIFI_DRIVERS = " \
 	firmware-htc7010 \
 	firmware-htc9271 \
 	firmware-rt2870 \
+	firmware-rt3070 \	
 	firmware-rt73 \
 	firmware-rtl8712u \
 	firmware-zd1211 \
@@ -32,6 +33,7 @@ EXTERNAL_WIFI_DRIVERS = " \
 	\
 	rtl8192cu \
 	rtl8188eu \
+	rt5370 \	
 	"
 
 ENIGMA2_PLUGINS = " \
