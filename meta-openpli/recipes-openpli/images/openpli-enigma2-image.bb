@@ -90,6 +90,7 @@ IMAGE_INSTALL += " \
 	${@base_contains("MACHINE_FEATURES", "externalwifi", "${EXTERNAL_WIFI_DRIVERS}", "", d)} \
 	\
 	${@base_contains('OPENPLI_FEATURES', 'dvd', 'cdtextinfo', '', d)} \
+        ${@base_contains("MACHINE", "inihdp", "enigma2-plugin-drivers-network-usb-rt3070", "", d)} \
 	"
 
 export IMAGE_BASENAME = "openpli-enigma2"
