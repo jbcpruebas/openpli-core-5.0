@@ -41,11 +41,11 @@ IMAGE_FEATURES += "package-management"
 # rootfs_remove_opkg_leftovers but that fails to parse.
 rootfsremoveopkgleftovers() {
 	if [ "${MACHINE}" = "7100s" ]; then
-		touch –a -m 755 ${IMAGE_ROOTFS}/etc/model
+		install -m 755 ${IMAGE_ROOTFS}/etc/model
 		echo "Twinboxlcd" > /etc/model
 	fi
 	if [ "${MACHINE}" = "sf3038" ]; then
-		touch –a -m 755 ${IMAGE_ROOTFS}/etc/modell
+		install -m 755 ${IMAGE_ROOTFS}/etc/modell
 		echo "octagon" > /etc/model
 	fi
 
