@@ -40,6 +40,15 @@ IMAGE_FEATURES += "package-management"
 # of the installer that populates the rootfs. I wanted to call this
 # rootfs_remove_opkg_leftovers but that fails to parse.
 rootfsremoveopkgleftovers() {
+	if [ "${MACHINE}" = "7100s" ]; then
+		touch –a ${IMAGE_ROOTFS}/etc/model
+		echo "Twinboxlcd" > /etc/model
+	fi
+	if [ "${MACHINE}" = "sf3038" ]; then
+		touch –a ${IMAGE_ROOTFS}/etc/model
+		echo "octagon" > /etc/model
+	fi
+
 	cd ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/
 		rm -r ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable.txt
 		mv ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable-neu.txt ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable.txt
