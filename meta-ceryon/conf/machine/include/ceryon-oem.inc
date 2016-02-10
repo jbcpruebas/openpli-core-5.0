@@ -101,7 +101,7 @@ IMAGE_CMD_ubi_append = " \
    rm -Rf ${IMAGEDIR}; \
 	"
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff bootsplash omb videoenhancement directfb sdl skins1080 kernelwifi wlan \
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff bootsplash omb videoenhancement directfb sdl skins1080 externalwifi wlan \
     ${@base_contains('MACHINEBUILD', 'e4hdhybrid', 'dvb-c dvb-c-only' , '', d)} \
 "
 
