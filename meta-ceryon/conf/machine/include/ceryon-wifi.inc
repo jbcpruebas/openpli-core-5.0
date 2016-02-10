@@ -19,4 +19,5 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += " \
 	kernel-module-r8188eu \
 	kernel-module-r8723au \
 	kernel-module-rtl8192cu \
+	kernel-module-rt5370 \	
 	"
