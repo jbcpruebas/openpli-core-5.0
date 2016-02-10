@@ -5,7 +5,6 @@ KERNEL_WIFI_DRIVERS = " \
 	firmware-htc7010 \
 	firmware-htc9271 \
 	firmware-rt2870 \
-	firmware-rt3070 \	
 	firmware-rt73 \
 	firmware-rtl8712u \
 	firmware-zd1211 \
