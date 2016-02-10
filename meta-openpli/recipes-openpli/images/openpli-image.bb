@@ -40,14 +40,6 @@ IMAGE_FEATURES += "package-management"
 # of the installer that populates the rootfs. I wanted to call this
 # rootfs_remove_opkg_leftovers but that fails to parse.
 rootfsremoveopkgleftovers() {
-	if [ "${MACHINE}" = "7100s" ]; then
-		install -m 755 ${IMAGE_ROOTFS}/etc/model
-		echo "Twinboxlcd" > /etc/model
-	fi
-	if [ "${MACHINE}" = "sf3038" ]; then
-		install -m 755 ${IMAGE_ROOTFS}/etc/modell
-		echo "octagon" > /etc/model
-	fi
 
 	cd ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/
 		rm -r ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/BackupSuite/lookuptable.txt
@@ -61,6 +53,18 @@ rootfsremoveopkgleftovers() {
 		mv ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/bre2ze-neu.xml ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/bre2ze.xml
 		mv ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/red1-neu.png ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/red1.png
 		mv ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/red1-neu.xml ${IMAGE_ROOTFS}/usr/share/enigma2/rc_models/red1.xml
+	cd
+
+	cd ${IMAGE_ROOTFS}/etc/
+
+	if [ "${MACHINE}" = "7100s" ]; then
+		mv ${IMAGE_ROOTFS}/etc/model-7100s ${IMAGE_ROOTFS}/etc/model
+		rm -r ${IMAGE_ROOTFS}/etc/model-sf3038
+	fi
+	if [ "${MACHINE}" = "sf3038" ]; then
+		mv ${IMAGE_ROOTFS}/etc/model-sf3038 ${IMAGE_ROOTFS}/etc/model
+		rm -r ${IMAGE_ROOTFS}/etc/model-7100s
+	fi
 	cd
 
 	cd ${IMAGE_ROOTFS}/usr/lib/enigma2/python/Plugins/Extensions/OpenWebif/public/images/boxes/
