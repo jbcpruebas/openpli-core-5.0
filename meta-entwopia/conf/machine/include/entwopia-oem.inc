@@ -46,7 +46,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
     "
 
 MACHINE_EXTRA_RRECOMMENDS = " \
-    gst-plugin-dvbmediasink \
+    gstreamer1.0-plugin-dvbmediasink \
     "
 
 include conf/machine/include/autoload-filesystems.inc
@@ -88,7 +88,7 @@ IMAGE_CMD_ubi_append = " \
 	"
 
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff bootsplash omb skins1080 videoenhancement ci"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff bootsplash omb skins1080 videoenhancement ci externalwifi kernelwifi wlan"
 
 BOOTLOGO_FILENAME = "splash.bin"
 
