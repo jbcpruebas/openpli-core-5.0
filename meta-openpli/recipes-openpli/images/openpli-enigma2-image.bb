@@ -27,9 +27,6 @@ EXTRA_KERNEL_WIFI_DRIVERS = " \
 	"
 
 EXTERNAL_WIFI_DRIVERS = " \
-	firmware-rtl8192cu \
-	\
-	rtl8192cu \
 	rt3070 \	
 	"
 
