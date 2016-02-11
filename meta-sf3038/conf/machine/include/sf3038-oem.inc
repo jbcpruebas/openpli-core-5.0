@@ -7,7 +7,7 @@ KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
-    sf3038-dvb-modules-${MACHINE_DRIVER} \
+    sf3038-dvb-modules-sf3038 \
     "
 
 DVBPROVIDER = "kernel"
