@@ -30,8 +30,8 @@ DEFAULTTUNE = "mips32el"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-sf3038"
 
-PREFERRED_PROVIDER_virtual/blindscan-dvbs = "broadmedia-blindscan-utils"
-PREFERRED_PROVIDER_virtual/blindscan-dvbc = "broadmedia-blindscan-utils"
+PREFERRED_PROVIDER_virtual/blindscan-dvbs = "sf3038-blindscan-utils"
+PREFERRED_PROVIDER_virtual/blindscan-dvbc = "sf3038-blindscan-utils"
 
 KERNEL_IMAGETYPE = "vmlinux"
 KERNEL_OUTPUT = "${KERNEL_IMAGETYPE}"
