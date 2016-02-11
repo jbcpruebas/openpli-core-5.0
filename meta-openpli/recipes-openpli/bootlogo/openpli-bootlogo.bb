@@ -26,6 +26,8 @@ SRC_URI_append_ew7362 = "file://wwio/splash.bin"
 
 SRC_URI_append_sf3038 = "file://octagon/splash.bin"
 
+SRC_URI_append_sf108 = "file://octagon/splash.bin"
+
 SRC_URI = " \
 	file://bootlogo.mvi \
 	file://switchoff.mvi \
@@ -83,11 +85,18 @@ do_install_append_7100s() {
         install -m 0755 ${S}/7100s/lcdwarning220.bin ${DEPLOY_DIR_IMAGE}/7100s/lcdwarning220.bin
         install -m 0755 ${S}/7100s/lcdcomplete220.bin ${DEPLOY_DIR_IMAGE}/7100s/lcdcomplete220.bin
 }
+
 do_install_append_ew7362() {
 	mkdir -p ${DEPLOY_DIR_IMAGE}/wwio
         install -m 0755 ${S}/wwio/splash.bin ${DEPLOY_DIR_IMAGE}/wwio/splash.bin   
 }
+
 do_install_append_sf3038() {
+	mkdir -p ${DEPLOY_DIR_IMAGE}/octagon
+        install -m 0755 ${S}/octagon/splash.bin ${DEPLOY_DIR_IMAGE}/octagon/splash.bin   
+}
+
+do_install_append_sf108() {
 	mkdir -p ${DEPLOY_DIR_IMAGE}/octagon
         install -m 0755 ${S}/octagon/splash.bin ${DEPLOY_DIR_IMAGE}/octagon/splash.bin   
 }
