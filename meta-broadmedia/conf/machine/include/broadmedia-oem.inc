@@ -23,7 +23,7 @@ ${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
 
 MACHINE_DRIVER = "\
 ${@base_contains('MACHINEBUILD', 'mbtwinplus', 'twinplus' , '', d)}\
-${@base_contains('MACHINEBUILD', 'g300', 'sf3038' , '', d)}\
+${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
 "
 
 MTD_KERNEL = "mtd1"
@@ -32,7 +32,7 @@ KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
-    broadmedia-dvb-modules-${MACHINE_DRIVER} \
+    broadmedia-dvb-modules-sf3038 \
     "
 
 DVBPROVIDER = "kernel"
