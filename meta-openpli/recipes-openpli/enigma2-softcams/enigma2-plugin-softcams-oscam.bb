@@ -47,8 +47,10 @@ EXTRA_OECMAKE += "\
     -DHAVE_PCSC=0"
 
 do_install() {
-	install -d ${D}/etc/tuxbox/config/oscam
-	install -m 0644 ${WORKDIR}/oscam.* ${D}/etc/tuxbox/config/oscam/
-	install -d ${D}/usr/bin
-	install -m 0755 ${B}/oscam ${D}/usr/bin
+    install -d ${D}/etc/tuxbox/config/oscam
+    install -m 0644 ${WORKDIR}/oscam.* ${D}/etc/tuxbox/config/oscam/
+    install -m 0755 ${WORKDIR}/build/oscam ${WORKDIR}/git  
+    install -m 0755 ${WORKDIR}/build/init.oscam ${WORKDIR}/git       
+    install -d ${D}/usr/bin
+    install -m 0755 ${S}/oscam ${D}/usr/bin 
 }
