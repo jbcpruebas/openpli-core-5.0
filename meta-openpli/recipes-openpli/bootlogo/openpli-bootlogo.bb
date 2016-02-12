@@ -26,7 +26,7 @@ SRC_URI_append_ew7362 = "file://wwio/splash.bin"
 
 SRC_URI_append_sf3038 = "file://octagon/splash.bin"
 
-SRC_URI_append_sf108 = "file://octagon/splash.bin"
+SRC_URI_append_vg5000 = "file://octagon/splash.bin"
 
 SRC_URI = " \
 	file://bootlogo.mvi \
@@ -96,7 +96,7 @@ do_install_append_sf3038() {
         install -m 0755 ${S}/octagon/splash.bin ${DEPLOY_DIR_IMAGE}/octagon/splash.bin   
 }
 
-do_install_append_sf108() {
+do_install_append_vg5000() {
 	mkdir -p ${DEPLOY_DIR_IMAGE}/octagon
         install -m 0755 ${S}/octagon/splash.bin ${DEPLOY_DIR_IMAGE}/octagon/splash.bin   
 }
