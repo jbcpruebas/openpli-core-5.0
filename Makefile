@@ -24,6 +24,7 @@ BBLAYERS ?= \
 	$(CURDIR)/openembedded-core/meta \
 	$(CURDIR)/meta-openpli \
 	$(CURDIR)/meta-ceryon \
+	$(CURDIR)/meta-broadmedia \
 	$(CURDIR)/meta-entwopia \
 	$(CURDIR)/meta-dream \
 	$(CURDIR)/meta-vuplus \
