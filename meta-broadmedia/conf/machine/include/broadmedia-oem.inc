@@ -23,7 +23,7 @@ ${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
 
 MACHINE_DRIVER = "\
 ${@base_contains('MACHINEBUILD', 'mbtwinplus', 'twinplus' , '', d)}\
-${@base_contains('MACHINEBUILD', 'sf3038', 'sf3038' , '', d)}\
+${@base_contains('MACHINEBUILD', 'g300', 'sf3038' , '', d)}\
 "
 
 MTD_KERNEL = "mtd1"
@@ -43,7 +43,7 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
     "
 
 MACHINE_EXTRA_RRECOMMENDS = " \
-    ${@base_contains("GST_VERSION", "1.0", "gstreamer1.0-plugin-dvbmediasink", "gst-plugin-dvbmediasink", d)} \
+    ${@base_contains("GST_VERSION", "1.0", "gstreamer1.0-plugin-dvbmediasink", "", d)} \
     "
 
 include conf/machine/include/autoload-filesystems.inc
