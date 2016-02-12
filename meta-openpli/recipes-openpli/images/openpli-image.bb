@@ -6,6 +6,7 @@ IMAGE_INSTALL = " \
 	${ROOTFS_PKGMANAGE} \
 	3rd-party-feed-configs \
 	openpli-feed \
+	openpli-settings
 	avahi-daemon \
 	dropbear \
 	e2fsprogs-e2fsck \
