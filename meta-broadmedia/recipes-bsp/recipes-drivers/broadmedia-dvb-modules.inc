@@ -8,7 +8,7 @@ PACKAGE_ARCH = "${MACHINEBUILD}"
 PV = "${KV}+${SRCDATE}"
 PR = "r2"
 
-SRC_URI = "https://www.dropbox.com/s/mtr4kwrkb4eyuso/broadmedia-drivers-4.1.15-5.3.0-20160129.zip?dl=0"
+SRC_URI = "https://source.mynonpublic.com/broadmedia/sf3038-drivers-4.1.15-5.3.0-20160129.zip"
 
 S = "${WORKDIR}"
 
